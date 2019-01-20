@@ -7,8 +7,8 @@ theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
-# googleAnalytics = "your-google-analytics-id"
-# enableRobotsTXT = true
+googleAnalytics = "UA-132815441-1"
+enableRobotsTXT = true
 
 # summarylength = 30
 
@@ -44,12 +44,12 @@ theme = "hyde-hyde"
 ## Social Accounts
 [params.social]
     github = "hillfolk"
-    linkedin = "<username>"
+    linkedin = "jun-yong-park-35140175"
     facebook = "hillfolk25"
-    stackoverflow = "<username>"
-    telegram = "<username>"
-    email = "your-email@example.com"
-    # gravatar = "your-email@example.com"
+    stackoverflow = "hillfolk"
+    #telegram = ""
+    #email = "your-email@example.com"
+    #gravatar = "your-email@example.com"
 
 ## Main Menu
 [[menu.main]]
