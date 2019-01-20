@@ -2,7 +2,7 @@
 title = "Portfolio"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-01-20T17:47:01+09:00
+lastmod = 2019-01-20T18:20:38+09:00
 tags = ["resume", "portfolio"]
 categories = ["portfolio"]
 draft = false
@@ -11,11 +11,13 @@ baz = "zoo"
 alpha = 1
 beta = "two words"
 gamma = 10
-layout: 'portfolio'
 [menu.main]
   identifier = "portfolio"
   weight = "auto"
 +++
+
+\#+hugo\_layout : portfolio
+
 
 ## Information :@Informat {#information-informat}
 
