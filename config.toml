@@ -58,10 +58,10 @@ enableRobotsTXT = true
     identifier = "posts"
     url = "/posts/"
 #[[menu.main]]
-#    name = "Portfolio"
-#    identifier = "portfolio"
+#    name = "Resume"
+#    identifier = "resume"
 #    weight = 200
-#    url = "/portfolio/"
+#    url = "/resume/"
 #[[menu.main]]
 #    name = "About"
 #    identifier = "about"
