@@ -2,35 +2,16 @@
 title = "Portfolio"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-07T23:31:18+09:00
+lastmod = 2019-02-08T00:07:28+09:00
 tags = ["resume", "portfolio"]
 categories = ["portfolio"]
 draft = false
-foo = "bar"
-baz = "zoo"
-alpha = 1
-beta = "two words"
-gamma = 10
 [menu.main]
   identifier = "portfolio"
   weight = "auto"
 +++
 
 \#+hugo\_layout : portfolio
-
-
-## Information :@Informat {#information-informat}
-
--   생년월일:1983년 3월 25일
--   주소: 수원시 팔달구 팔달문로 153번길 54, 101호(우만동, 부림빌라)
--   이메일: pjy1418@gmail.com
--   연락처: 010-2712-8325
-
-
-## 학력 {#학력}
-
--   한국교통대학교       컴퓨터과학과(편입)  2008년 ~2010년
--   한국교통대학교 대학원 컴퓨터정보공학전공  2010년 ~ 2011년
 
 
 ## Github & Blog {#github-and-blog}
