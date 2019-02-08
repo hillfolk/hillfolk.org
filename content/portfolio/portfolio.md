@@ -2,9 +2,7 @@
 title = "Portfolio"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-08T15:46:58+09:00
-tags = ["resume", "portfolio"]
-categories = ["portfolio"]
+lastmod = 2019-02-08T15:50:45+09:00
 draft = false
 +++
 
