@@ -2,7 +2,7 @@
 title = "Object Pascal String Format"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-08T15:56:11+09:00
+lastmod = 2019-02-08T15:57:04+09:00
 tags = ["delphi", "pascal"]
 categories = ["posts"]
 weight = 100

@@ -2,7 +2,7 @@
 title = "Object Pascal String Format"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-08T15:57:04+09:00
+lastmod = 2019-02-08T15:58:48+09:00
 tags = ["delphi", "pascal"]
 categories = ["posts"]
 weight = 100
@@ -77,13 +77,13 @@ Show full unit code
 
 Example code : Showing all of the time field formatting data types
 
-\#+BEIGN\_SRC
+```nil
 var
   myDate : TDateTime;
 
 begin
-  _/ Set up our TDateTime variable with a full date and time :
-  /_ 5th of June 2000 at 01:02:03.004  (.004 milli-seconds)
+  // Set up our TDateTime variable with a full date and time :
+  // 5th of June 2000 at 01:02:03.004  (.004 milli-seconds)
   myDate := EncodeDateTime(2000, 6, 5, 1, 2, 3, 4);
 
 // Time only - numeric values with no leading zeroes
@@ -101,27 +101,29 @@ begin
 // Use the ShortDateFormat + LongTimeFormat settings
   ShowMessage('           c = '+formatdatetime('c', myDate));
 end;
+
+
 Show full unit code
-        h:m:s.z = 1:2:3.4
+	h:m:s.z = 1:2:3.4
    hh:mm:ss.zzz = 01:02:03.004
-              t = 01:02
-             tt = 01:02:03
-              c = 05/06/2000 01:02:03
+	      t = 01:02
+	     tt = 01:02:03
+	      c = 05/06/2000 01:02:03
 Example code : Showing the effect of local date format settings
 var
   myDate : TDateTime;
 
 begin
-  _/ Set up our TDateTime variable with a full date and time :
-  /_ 5th of June 2049 at 01:02:03.004  (.004 milli-seconds)
-  _/
-  /_ Note that 49 is treated as 2049 as follows :
-  _/               TwoDigitYearCenturyWindow => 50
-  /_                            Current year => 2008 (at time of writing)
-  _/      Subtract TwoDigitYearCenturyWindow => 1958
-  /_            2 digit year to be converted => 49
-  _/  Compare with the last 2 digits of 1958 => Less
-  /_      So the year is in the next century => 2049
+  // Set up our TDateTime variable with a full date and time :
+  // 5th of June 2049 at 01:02:03.004  (.004 milli-seconds)
+  //
+  // Note that 49 is treated as 2049 as follows :
+  //               TwoDigitYearCenturyWindow => 50
+  //                            Current year => 2008 (at time of writing)
+  //      Subtract TwoDigitYearCenturyWindow => 1958
+  //            2 digit year to be converted => 49
+  //  Compare with the last 2 digits of 1958 => Less
+  //      So the year is in the next century => 2049
   // (58 would be converted to 1958)
 
 myDate := StrToDateTime('05/06/49 01:02:03.004');
@@ -130,7 +132,7 @@ myDate := StrToDateTime('05/06/49 01:02:03.004');
 
 // Use the DateSeparator and TimeSeparator values
   ShowMessage('dd/mm/yy hh:nn:ss = '+
-              formatdatetime('dd/mm/yy hh:nn:ss', myDate));
+	      formatdatetime('dd/mm/yy hh:nn:ss', myDate));
 
 // Use ShortMonthNames
   ShowMessage('              mmm = '+formatdatetime('mmm', myDate));
@@ -161,13 +163,13 @@ myDate := StrToDateTime('05/06/49 01:02:03.004');
 
 // Use the TwoDigitCenturyWindow
   ShowMessage('       dd/mm/yyyy = '+
-              formatdatetime('dd/mm/yyyy', myDate));
+	      formatdatetime('dd/mm/yyyy', myDate));
 
 ShowMessage('');
 
 // Now change the defaults
   DateSeparator      := '-';
-  TimeSeparator      := '\_';
+  TimeSeparator      := '_';
   ShortDateFormat    := 'dd/mmm/yy';
   LongDateFormat     := 'dddd dd of mmmm of yyyy';
   TimeAMString       := 'morning';
@@ -180,14 +182,14 @@ ShowMessage('');
   LongDayNames[1]    := 'SUNDAY';
   TwoDigitYearCenturyWindow := 75; // This means 49 is treated as 1949
 
-_/ Set up our TDateTime variable with the same value as before
-  /_ except that we must use the new date and time separators
+// Set up our TDateTime variable with the same value as before
+  // except that we must use the new date and time separators
   // The TwoDigitYearCenturyWindow variable only takes effect here
-  myDate := StrToDateTime('09-02-49 01\_02\_03.004');
+  myDate := StrToDateTime('09-02-49 01_02_03.004');
 
 // Use the DateSeparator and TimeSeparator values
   ShowMessage('dd/mm/yy hh:nn:ss = '+
-              formatdatetime('dd/mm/yy hh:nn:ss', myDate));
+	      formatdatetime('dd/mm/yy hh:nn:ss', myDate));
 
 // Use ShortMonthNames
   ShowMessage('              mmm = '+formatdatetime('mmm', myDate));
@@ -218,34 +220,34 @@ _/ Set up our TDateTime variable with the same value as before
 
 // Use the TwoDigitCenturyWindow
   ShowMessage('       dd/mm/yyyy = '+
-              formatdatetime('dd/mm/yyyy', myDate));
+	      formatdatetime('dd/mm/yyyy', myDate));
 end;
 Show full unit code
    dd/mm/yy hh:mm:ss = 05/06/49 01:02:03
-                 mmm = Jun
-                mmmm = June
-                 ddd = Sat
-                dddd = Saturday
-               ddddd = 05/06/2049
-              dddddd = 05 June 2049
-              hhampm = 01AM
-                   t = 01:02
-                  tt = 01:02:03
-          dd/mm/yyyy = 05/06/2049
+		 mmm = Jun
+		mmmm = June
+		 ddd = Sat
+		dddd = Saturday
+	       ddddd = 05/06/2049
+	      dddddd = 05 June 2049
+	      hhampm = 01AM
+		   t = 01:02
+		  tt = 01:02:03
+	  dd/mm/yyyy = 05/06/2049
 
-dd/mm/yy hh:nn:ss = 05-06-49 01\_02\_03
-                 mmm = JUN
-                mmmm = JUNE
-                 ddd = SUN
-                dddd = SUNDAY
-               ddddd = 05-JUN-49
-              dddddd = SUNDAY 05 of JUNE of 1949
-              hhampm = 01morning
-                   t = 01\_02\_03
-                  tt = 01 \_ 02 \_ 03 . 004
-          dd/mm/yyyy = 05-06-1949
+dd/mm/yy hh:nn:ss = 05-06-49 01_02_03
+		 mmm = JUN
+		mmmm = JUNE
+		 ddd = SUN
+		dddd = SUNDAY
+	       ddddd = 05-JUN-49
+	      dddddd = SUNDAY 05 of JUNE of 1949
+	      hhampm = 01morning
+		   t = 01_02_03
+		  tt = 01 _ 02 _ 03 . 004
+	  dd/mm/yyyy = 05-06-1949
 
-\#+END\_SRC
+```
 
 
 ## Float & Double Format {#float-and-double-format}
