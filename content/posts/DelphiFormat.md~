@@ -2,7 +2,7 @@
 title = "Object Pascal String Format"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-07T23:36:29+09:00
+lastmod = 2019-02-08T15:56:11+09:00
 tags = ["delphi", "pascal"]
 categories = ["posts"]
 weight = 100
@@ -28,12 +28,11 @@ x 	= 16진수(Hexadecimal)
 ## Datetime {#datetime}
 
 formatdatetime command
+Example code : Showing all of the date field formatting data types
 
 ```nil
-Example code : Showing all of the date field formatting data types
 var
   myDate : TDateTime;
-
 begin
   // Set up our TDateTime variable with a full date and time :
   // 5th of June 2000 at 01:02:03.004  (.004 milli-seconds)
@@ -61,6 +60,9 @@ begin
   ShowMessage('                  c = '+ formatdatetime('c', myDate));
 end;
 
+```
+
+```nil
 
 Show full unit code
 		 d/m/y = 5/6/00
@@ -73,8 +75,9 @@ Show full unit code
 
 ```
 
-\#+BEIGN\_SRC
 Example code : Showing all of the time field formatting data types
+
+\#+BEIGN\_SRC
 var
   myDate : TDateTime;
 
