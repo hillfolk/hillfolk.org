@@ -2,7 +2,7 @@
 title = "Object Pascal String Format"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-01-20T19:42:22+09:00
+lastmod = 2019-02-07T23:36:29+09:00
 tags = ["delphi", "pascal"]
 categories = ["posts"]
 weight = 100
@@ -11,6 +11,7 @@ draft = true
 
 ## Number {#number}
 
+```nil
 d 	= 정수(Decimal)
 e 	= 과학수치(실수)(Exponent,Scientific)
 f 	= 부동소수점(Fixed)
@@ -21,6 +22,7 @@ p 	= 포인터(Pointer)
 s 	= 문자열(String)
 u 	= 부호없는 정수(Unsigned decimal)
 x 	= 16진수(Hexadecimal)
+```
 
 
 ## Datetime {#datetime}
@@ -58,6 +60,8 @@ begin
 // Use the ShortDateFormat + LongTimeFormat settings
   ShowMessage('                  c = '+ formatdatetime('c', myDate));
 end;
+
+
 Show full unit code
 		 d/m/y = 5/6/00
 	      dd/mm/yy = 05/06/00
