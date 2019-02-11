@@ -1,8 +1,8 @@
 +++
 title = "언제나 어려운 이름 Thread(Multithread Programming)"
 author = ["Hillfolk"]
-date = 2019-01-20
-lastmod = 2019-02-11T23:14:06+09:00
+date = 2019-02-04
+lastmod = 2019-02-11T23:17:03+09:00
 tags = ["Delphi", "Thread"]
 categories = ["posts"]
 weight = 100
