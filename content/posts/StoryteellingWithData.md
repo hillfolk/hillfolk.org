@@ -2,7 +2,7 @@
 title = "데이터 스토리텔링 요약"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-11T22:51:02+09:00
+lastmod = 2019-02-25T23:53:04+09:00
 tags = ["storytelling"]
 categories = ["posts"]
 weight = 100
