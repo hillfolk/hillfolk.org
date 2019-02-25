@@ -2,7 +2,7 @@
 title = "언제나 어려운 이름 Thread(Multithread Programming)"
 author = ["Hillfolk"]
 date = 2019-02-04
-lastmod = 2019-02-23T21:54:13+09:00
+lastmod = 2019-02-25T23:51:43+09:00
 tags = ["Delphi", "Thread"]
 categories = ["posts"]
 weight = 100
