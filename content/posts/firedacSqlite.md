@@ -2,7 +2,7 @@
 title = "Firedac에서 SQLite 사용하기(Window)#"
 author = ["Hillfolk"]
 date = 2019-02-26
-lastmod = 2019-02-26T00:58:42+09:00
+lastmod = 2019-02-26T01:00:47+09:00
 tags = ["Delphi", "Firedac", "Database"]
 categories = ["posts"]
 weight = 100
