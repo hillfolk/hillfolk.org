@@ -2,8 +2,8 @@
 title = "Go Cobra 사용하기 Go Cobra 사용하기"
 author = ["Hillfolk"]
 date = 2019-05-01
-lastmod = 2019-05-11T23:17:32+09:00
-tags = ["go", "MongoDB", "go-mongo-driver"]
+lastmod = 2019-05-11T23:28:45+09:00
+tags = ["go", "cobra"]
 categories = ["posts"]
 weight = 100
 draft = true
