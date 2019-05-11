@@ -2,7 +2,7 @@
 title = "MQTT Protocol"
 author = ["Hillfolk"]
 date = 2019-02-25
-lastmod = 2019-02-26T01:56:29+09:00
+lastmod = 2019-02-26T17:01:04+09:00
 tags = ["Delphi", "Thread"]
 categories = ["posts"]
 weight = 100
@@ -66,25 +66,23 @@ draft = true
 -   Message 수신
     -   **토픽 와일드 카드**
 
-\#+BEGIN
-   / 토픽 레벨 구분자: 토픽 트리 내 레벨을 구분하는 데 사용 되며 토픽 공간에 계층적인 구조를 제공한다.
-   ## 다중 레벨 와일드 카드: 토팩 내 여러 레벨을 일치 시키는 와일드 카드
-
--   단일 레벨 와일드 카드: 단일 토픽 레벨만 일치 시키는 와일드 카드
-
-\#+END
+```nil
+/ 토픽 레벨 구분자: 토픽 트리 내 레벨을 구분하는 데 사용 되며 토픽 공간에 계층적인 구조를 제공한다.
+## 다중 레벨 와일드 카드: 토팩 내 여러 레벨을 일치 시키는 와일드 카드
++ 단일 레벨 와일드 카드: 단일 토픽 레벨만 일치 시키는 와일드 카드
+```
 
 -   **와일드 카드 사용**
 
-\#+BEGIN
-   /group/dev/tag
-   /group/+/tag :모든 dev 가보낸 Tag 메시지에 관심 있을때
-   /group/# : 모든 Group 메시지에 관심 있을때
-\#+END
+```nil
+/group/dev/tag
+/group/+/tag :모든 dev 가보낸 Tag 메시지에 관심 있을때
+/group/# : 모든 Group 메시지에 관심 있을때
+```
 
 -   **payLoad 객체**
 
-\#+BEGIN
-   payloadBytes: ArrayBuffer 형태 데이터
-   payloadString: String 형태 데이터
-\#+END
+```nil
+payloadBytes: ArrayBuffer 형태 데이터
+payloadString: String 형태 데이터
+```
