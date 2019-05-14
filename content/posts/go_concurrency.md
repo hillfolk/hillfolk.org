@@ -2,7 +2,7 @@
 title = "Go 동시성 프로그래밍 하기"
 author = ["Hillfolk"]
 date = 2019-05-03
-lastmod = 2019-05-14T21:09:06+09:00
+lastmod = 2019-05-14T21:14:02+09:00
 tags = ["go", "concurrency", "channel", "goroutine"]
 categories = ["posts"]
 weight = 100
@@ -51,7 +51,7 @@ func main() {
 
 ## range close 사용하기 {#range-close-사용하기}
 
--   close 는 채널을 닫을 수 있으며 이미 닫은 채널을 다으면 패닉 발생
+-   close 는 채널을 닫을 수 있으며 이미 닫은 채널을 닫게되면 패닉 발생
 -   채널을 닫으면 range 푸르가 종료 됩니다.
 -   채널이 열려 있고 값이 들어 오지 않으면 range 는 실행되지 않고 계속 대기 한다.
 
