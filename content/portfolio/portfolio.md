@@ -2,7 +2,7 @@
 title = "Portfolio"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-07-27T16:58:18+09:00
+lastmod = 2019-07-27T19:26:01+09:00
 draft = false
 +++
 
@@ -16,17 +16,7 @@ draft = false
 
 -   Programming languages: Java , Object-Pascal, Python, Golangce
 -   Software architecture : Design Pattern, Event Driven Architecture
--   Messaging System :Nats
--   IoT Service Platform : Kaa, Thingsboard, Node-Red, MQTT
-
-
-## 연구 논문 {#연구-논문}
-
-1.  무선센서네트워크에서 습지 데이터의 효율적 처리를 위한 동적 클러스터링 기반의 이질적인 센싱 데이터 병합기법 논문발표(한국통신학회 추계학술대회 2009)
-2.  센서 모니터링 환경에서 캐쉬 테이블을 사용한 센서 스트림 데이터 고속 처리 시스템 설계 (컴퓨터정보학회 하계 학술대회 2009)
-3.  Efficient Sensor Stream Data Processing System to use Cache Technique for Ubiquitous Sensor Network Application Service 논문발표 (Intercomp 오스트리아 2011)
-4.  Intelligent Smart Safety Control System with USN (IT Promotion in Asia 2011 Septmber 26-27 2011)
-5.  Design and Implementation for Intelligent Safety Control System based on USN environment(석사학위 논문)
+-   Web Framework : Spring, flask, echo
 
 
 ## 사용 스킬 {#사용-스킬}
@@ -84,7 +74,7 @@ draft = false
 ## 주식회사 타키온테크 {#주식회사-타키온테크}
 
 **직책 : 책임연구원**
-**근무개월 : (33개월)현재 근무중**
+**근무개월 : (32개월)현재 근무중**
 
 
 ### 참여프로젝트 {#참여프로젝트}
@@ -92,7 +82,6 @@ draft = false
 -   QualityGuard v2.0 개발 (전류기반 공구 모니터링 솔루션)
 -   QualityGuard v3.0 개발 (전류기반 공구 모니터링 솔루션)
 -   두산 공작기계 MDAS 프로젝트 개발 (공작기계 데이터 업로드 및 파라메터 모니터링 소프트웨어)
--   현대자동차 화성공장 금형가공기 데이터수집 빛 분석 프로그램 개발
 
 
 ### 담당 업무 {#담당-업무}

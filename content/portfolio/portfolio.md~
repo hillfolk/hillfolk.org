@@ -2,7 +2,7 @@
 title = "Portfolio"
 author = ["Hillfolk"]
 date = 2019-01-20
-lastmod = 2019-02-08T15:50:45+09:00
+lastmod = 2019-07-27T16:58:18+09:00
 draft = false
 +++
 
@@ -84,14 +84,15 @@ draft = false
 ## 주식회사 타키온테크 {#주식회사-타키온테크}
 
 **직책 : 책임연구원**
-**근무개월 : (32개월)현재 근무중**
+**근무개월 : (33개월)현재 근무중**
 
 
 ### 참여프로젝트 {#참여프로젝트}
 
--   QualityGuard Client 응용 프로그램 개발
--   QualityGuard Middleware 응용 프로그램 개발
--   두산 공작기계 통신 프로그램 개발
+-   QualityGuard v2.0 개발 (전류기반 공구 모니터링 솔루션)
+-   QualityGuard v3.0 개발 (전류기반 공구 모니터링 솔루션)
+-   두산 공작기계 MDAS 프로젝트 개발 (공작기계 데이터 업로드 및 파라메터 모니터링 소프트웨어)
+-   현대자동차 화성공장 금형가공기 데이터수집 빛 분석 프로그램 개발
 
 
 ### 담당 업무 {#담당-업무}
@@ -105,7 +106,7 @@ draft = false
 
 ### 사용 기술 {#사용-기술}
 
--   QualityGuard: Delphi, TCP/IP, Modbus
+-   QualityGuard: Delphi, TCP/IP, Modbus, MongoDB
 -   센서 데이터 분석: python , Pandas, matplotlib
 
 
