@@ -1,15 +1,15 @@
 +++
-title = "Firedac에서 SQLite 사용하기(Window)"
+title = "Firedac에서 SQLite 사용하기(Window)#"
 author = ["Hillfolk"]
-date = 2019-02-24
-lastmod = 2019-02-26T01:19:24+09:00
+date = 2019-02-26
+lastmod = 2019-02-26T01:00:47+09:00
 tags = ["Delphi", "Firedac", "Database"]
 categories = ["posts"]
 weight = 100
 draft = true
 +++
 
-## Firedac에서 SQLite 사용하기(Window) {#firedac에서-sqlite-사용하기--window}
+## Firedac에서 SQLite 사용하기(Window)# {#firedac에서-sqlite-사용하기--window}
 
 firedac은 델파이에서 기본적으로 제공하는 데이터베이스 엑서스 컴포넌트입니다. Window 나 MacOS 또는 모바일에서 다 사용이 가능하기 때문에 최근에는 가장 쉽게 접근할수 있는 컴포넌트입니다. 회사에서 프로젝트를 진행하면서 로컬에서 데이터베이스를 사용해야 하기 때문에 가벼운 SQLite 를 사용해야 할때 쉽게 설치가 가능하기 때문에 사용해봤습니다.  그러면서 FireDac에서 SQLite 를 사용하는 방법에 대해서 간단하게 포스트 남깁니다.
 
