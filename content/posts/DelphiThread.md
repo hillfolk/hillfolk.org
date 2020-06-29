@@ -2,7 +2,7 @@
 title = "언제나 어려운 이름 Thread(Multithread Programming)"
 author = ["Hillfolk"]
 date = 2019-02-04
-lastmod = 2019-02-25T23:51:43+09:00
+lastmod = 2019-07-18T18:15:52+09:00
 tags = ["Delphi", "Thread"]
 categories = ["posts"]
 weight = 100
@@ -66,7 +66,7 @@ FreeOnTerminate 옵션은 쓰레드가 해재 되면 자동으로 메모리를 �
 
 ```nil
 HillThread.Terminate; // 쓰레드를 종료하는 명령
-HillThread.WaitFor(100); // 쓰레드가 작업을 마치고 종료할때 까지 100ms 대기
+HillThread.WaitFor; // 쓰레드가 작업을 마치고 종료할때 까지  대기
 HillThread.Free; //쓰레드 메모리 해제 (FreeOnTerminate 옵션을 True 할경우 자동으로 해제)
 ```
 

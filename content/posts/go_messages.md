@@ -2,7 +2,7 @@
 title = "Go Messaging System"
 author = ["Hillfolk"]
 date = 2019-05-02
-lastmod = 2019-05-13T19:29:25+09:00
+lastmod = 2019-07-27T19:16:14+09:00
 tags = ["go", "nats", "messaging-system"]
 categories = ["posts"]
 weight = 100
@@ -16,7 +16,7 @@ Message Echo System
 
 ## Intro {#intro}
 
-Nats Server는 클라우드 기본 으용 프로그램 IoT 메시징 및 마이크로 서비스 아키텍처를 위한 간단하고 고성능의 오픈소스 메시징 시스템 입니다.
+Nats Server는 IoT 메시징 및 마이크로 서비스 아키텍처를 위한 간단하고 고성능의 오픈소스 메시징 시스템 입니다.
 go로 작성되어 있으며 Python, Java, Ruby, Node.js 등으로 작성된 클라이언트가 있습니다.
 
 
