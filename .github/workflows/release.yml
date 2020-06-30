@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ release/* ]
+    branches: [ master ]
   pull_request:
-    branches: [ release/* ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,5 +37,5 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
           source: "./public"
-          target: "~/var/www/hillfolk.org/html"
+          target: "/var/www/hillfolk.org/html"
             
