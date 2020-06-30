@@ -37,5 +37,5 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
           source: "./public/*"
-          target: "/var/www/hillfolk.org/html/"
+          target: "~/"
             
