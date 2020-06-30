@@ -6,7 +6,7 @@ title = "Hillfolk"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
-# disqusShortname = "your-disqus-shortname"
+disqusShortname = "disqus_RJEzZ7BhPW"
 googleAnalytics = "UA-132815441-1"
 enableRobotsTXT = true
 
@@ -33,7 +33,6 @@ enableRobotsTXT = true
     highlightjsstyle = "github"
     
     # please choose either GraphComment or Disqus or Utterances
-    disqusShortname = "disqus_RJEzZ7BhPW"
     #GraphCommentId = "..."
     #UtterancesRepo = "..." # https://utteranc.es/
     #UtterancesIssueTerm = "..." # pathname, url, title, og:title
