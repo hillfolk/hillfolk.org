@@ -36,6 +36,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
-          source: "./public/"
+          source: "./public/*"
           target: "/var/www/hillfolk.org/html"
             
