@@ -2,7 +2,7 @@
 title = "이력서"
 author = ["Hillfolk"]
 date = 2019-07-15
-lastmod = 2020-07-15T17:43:48+09:00
+lastmod = 2020-07-15T17:49:15+09:00
 draft = false
 +++
 
@@ -60,15 +60,6 @@ draft = false
     -   기관: 휴인스 교육센서
     -   기간: 2009.7.8 ~2009.7.9(2일)
     -   설명: TinyOS 2.0을 이용한 센서 네트워크 구축 및 JAVA 어플리케이션을 이용한 센서 네트워크 어플리케이션 구축
-
-
-## 개인 오픈소스  프로젝트 {#개인-오픈소스-프로젝트}
-
-
-### Raven-Pascal : Sentry Object-Pascal Client {#raven-pascal-sentry-object-pascal-client}
-
--   Object-Pascal 언어에서 Sentry 서버에 데이터를 전송하는 클라이언트 컴포넌트
--   Github:  <https://github.com/hillfolk/Raven-Pascal>
 
 
 ## 일루미나리안 {#일루미나리안}
