@@ -1,8 +1,8 @@
 +++
 title = "이력서"
 author = ["Hillfolk"]
-date = 2019-01-20
-lastmod = 2020-07-15T17:36:11+09:00
+date = 2019-07-15
+lastmod = 2020-07-15T17:43:48+09:00
 draft = false
 +++
 
@@ -22,19 +22,19 @@ draft = false
 ## 사용 스킬 {#사용-스킬}
 
 -   Language:
-    -   Delphi, Java, Python, Go, Javascript
+    Delphi, Java, Python, Go, Javascript
 
 -   Backend Skill:
-    -   Spring & Spring Boot,Django,Rabbitmq,MariaDB
+    Spring & Spring Boot,Django,Rabbitmq,MariaDB
 
 -   Frontend Skill:
-    -   BackboneJs, JQuery, Underscore.js, requirejs, Marionette
+    BackboneJs, JQuery, Underscore.js, requirejs, Marionette
 
 -   Mobile Skill:
-    -   Android
+    Android
 
--   Tool
-    -   Git, AWS, Slack, Jenkins, Gitlab, IntelliJ
+-   Tool:
+    Git, AWS, Slack, IntelliJ, Jira, Docker
 
 
 ## 교육 이수 및 자격증 {#교육-이수-및-자격증}
