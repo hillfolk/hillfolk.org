@@ -2,24 +2,26 @@
 title = "Go 서비스를 Github Action 을 이용해서 AWS ECS 에 배포하기"
 author = ["Hillfolk"]
 date = 2020-07-15
-lastmod = 2020-07-15T22:29:14+09:00
+lastmod = 2020-07-17T13:07:19+09:00
 tags = ["github", "actions", "ecs", "ecr", "docker"]
 categories = ["posts"]
 draft = true
 weight = 100
 +++
 
-## Slide1 {#slide1}
+## 소개 {#소개}
 
 
 ### 배포 자동화 시스템 소개 {#배포-자동화-시스템-소개}
 
 Go 서비스의 원할한 운영 및 배포를 위한 시스템 구성을 소개 하도록 하겠습니다.
 
-사용 Tool
-클라우드 : AWS
-소스 레파지토리 : Github
-Docker 컨테이너: ECS
+
+#### 사용 Tool {#사용-tool}
+
+-   클라우드 : AWS
+-   소스 레파지토리 : Github
+-   Docker 컨테이너: ECS
 
 
 #### API 서비스 구성 {#api-서비스-구성}
@@ -32,7 +34,7 @@ Docker 컨테이너: ECS
 {{< figure src="/ox-hugo/aws-depory.png" >}}
 
 
-## Slide2 {#slide2}
+## API 서버 {#api-서버}
 
 
 ### 배포 테스트용 Go API 서버 만들기 {#배포-테스트용-go-api-서버-만들기}
@@ -46,7 +48,7 @@ Echo 와 Swagger 를 설정한 초간단 API 를 구성해 보겠습니다.
 
     <https://github.com/pangpanglabs/echoswagger/tree/v2/examples>
 
--   간단 팀: 코드 버전 지정해서 빌드 하기
+-   간단 팁 : 코드 버전 지정해서 빌드 하기
     Go App 을 빌드할때 -ldflags 옵션을 사용하면  Git 레파지토리를 지정한 Tag 를 코드에  삽입해서 어플리케이션의 빌드 넘버를 자동으로 마킹해서 버전관리를 쉽게 할수 있습니다.
 
 <!--listend-->
@@ -58,7 +60,7 @@ go build -ldflags "-X main.Version=`git describe --tags` -X main.Commit=`git rev
 ```
 
 
-## Slide3 {#slide3}
+## Docker {#docker}
 
 
 ### Docker를 사용하는 이유 {#docker를-사용하는-이유}
@@ -118,7 +120,7 @@ Docker는 Docekrfile 파일에 전용 도메인 언어로 이미지를 구성한
     ```
 
 
-## Slide4 {#slide4}
+## Docker Image Build {#docker-image-build}
 
 
 ### Docker Image 만들기 {#docker-image-만들기}
@@ -150,7 +152,7 @@ docker build -t   hillfolk/go-rest-api-template:latest . && docker run -p 1323:1
 ```
 
 
-## Slide6 {#slide6}
+## ECR 사용하기 {#ecr-사용하기}
 
 
 ### ECR(Elastic Container Registry) {#ecr--elastic-container-registry}
@@ -165,45 +167,46 @@ docker build -t hillfolk/go-rest-api-template .
 
 docker tag hillfolk/go-rest-api-template:latest  [레파지토리 주소를 이미지명으로 지정]:[tag] // 등록시에는 먼저 네임스페이스를 해당 레파지토리로의 경로로 변경 한다.
 
-docker push 068261909741.dkr.ecr.ap-northeast-2.amazonaws.com/hillfolk/go-rest-api-template:latest // 푸쉬
+docker push [레파지토리 주소]/hillfolk/go-rest-api-template:latest // 푸쉬
 
 ```
 
 
-## Slide7 {#slide7}
+## ECS 사용하기 {#ecs-사용하기}
 
 
 ### ECS (Elastic Container Service) {#ecs--elastic-container-service}
 
-ECS는 완전 관리형 컨테이너 오케스트레이션 서비스 입니다. [컨테이너 오케스트레이션](https://team-platform.tistory.com/48) 다양한 오케스트레이션 서비스가 있으며 ECS 의 경우는 AWS 에서 자체 개발한 서비스 이다.
-ECS의 장점은 다양한 AWS 기능과 통합이 쉽고 다른 서비스에 비해서 쉽게 적용이 가능합니다. 유료 서비스다 보니 다양한 기능과 옵션이 존재 한다.
+ECS는 완전 관리형 컨테이너 오케스트레이션 서비스 입니다.
+[컨테이너 오케스트레이션 ](https://team-platform.tistory.com/48): 다양한 오케스트레이션 서비스가 있으며 ECS 의 경우는 AWS 에서 자체 개발한 서비스 이다. ECS의 장점은 다양한 AWS 기능과 통합이 쉽고 다른 서비스에 비해서 쉽게 적용이 가능합니다. 유료 서비스다 보니 다양한 기능과 옵션이 존재 한다.
 
 
 #### 시작 유형 {#시작-유형}
 
 -   FARGATE : 컨테이너에 적합한 서버리스 컴퓨팅 엔진 으로 ECS 및 EKS 에 사용할 수 있으며 서버를 관리 할 필요 없이 어플리케이션 별로 리소스를 지정하여 관리 비용을 지불하는 방식으로 앱에 집중하여 인프라가 아닌 어플리케이션을 배포 관리 할수 있다.
 
--   EC2 : EC2 컨테이너 인스턴스를 연결하여 ECS 서비스 구성하기 때문에 위의 FARGATE 보다 비용을 저렴하나 설정이 복잡하고 확장성이 적음
+-   EC2 : EC2 컨테이너 인스턴스를 연결하여 ECS 서비스 구성하기 때문에 위의 FARGATE 보다 비용을 저렴하나 설정이 복잡하고 인프라 확장이 Farget 에 비해서 적습니다.
 
 
-#### 작업 정의 {#작업-정의}
+#### 작업 정의 (Task definition) {#작업-정의--task-definition}
 
 Docker 리포지토리 및 이미지, 메모리 및 CPU 요구 사항, 공유 데이터 볼륨, 컨테이너가 서로 연결되는 방식 을 지정한 JSON 템플릿의 정의 문서 입니다.
 서비스에 등록할 수 있는 단일 작업 정의 파일에서 원하는 만큼의 작업을 실행 할수 있다. 또한  작업 정의 파일을 사용하면 애플리케이션 사양의 버전을 관리할 수도 있습니다.
 
 
-#### ECS {#ecs}
+#### ECS 인프라  작성 순서 {#ecs-인프라-작성-순서}
 
 클러스터 생상 -> 작업 정의 생성 -> 서비스 생성 -> 작업정의 지정
 
 
-## Slide8 {#slide8}
+## Github Action 으로 배포 하기 {#github-action-으로-배포-하기}
 
 
-### Github Action {#github-action}
+### 작업 정의 파일 지정 {#작업-정의-파일-지정}
 
+-   task definition 파일 예제
 
-#### 작업 정의 파일 지정 {#작업-정의-파일-지정}
+<!--listend-->
 
 ```nil
 {
@@ -295,7 +298,7 @@ Docker 리포지토리 및 이미지, 메모리 및 CPU 요구 사항, 공유 �
 ```
 
 
-#### workflows 작성 {#workflows-작성}
+### Github Action Workflows 작성 {#github-action-workflows-작성}
 
 ```nil
 # This is a basic workflow to help you get started with Actions
