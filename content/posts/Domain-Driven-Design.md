@@ -2,7 +2,7 @@
 title = "Domain-Driven Design"
 author = ["Hillfolk"]
 date = 2020-07-06
-lastmod = 2020-11-29T00:11:05+09:00
+lastmod = 2021-08-23T23:00:02+09:00
 tags = ["domain-driven-design", "ddd", "도메인", "드리븐", "디자인"]
 categories = ["posts"]
 draft = true
@@ -88,7 +88,7 @@ type Order interface {
 코드를 작성 할때는 도메인에서 사용하는 용어를 사용하느 것이 매우 중요하다. 도메인에서 사용하는 용어를 코드의 사용하지 않을 경우 개발자와 사용자의 커뮤니케이션이 잘못될 수 있다.
 
 
-## <span class="org-todo todo PROJ">PROJ</span> 일반적인 도메인 주도 아키텍처 개요 {#일반적인-도메인-주도-아키텍처-개요}
+## 일반적인 도메인 주도 아키텍처 개요 {#일반적인-도메인-주도-아키텍처-개요}
 
 -   표현(Presentation) 사용자 인터페이스(UI): 사용자의 요청을 처리 하고 사용자에게 정보를 보여준다. 여기서 사용자는 소프트웨어를 사용하는 사람뿐만 아니라 외부 시스템도 사용자가 될 수 있다.
 -   응용(Application) : 사용자가 요청한 기능을 실행한다. 업무로직을 직접 구현하지 않으며 도메인 계층을 조합하여 기능을 실행한다.
@@ -112,7 +112,7 @@ type Order interface {
 -   루트객체는 어그리커드 내부의 하위 객체를 조합하여 기능을 완성한다.
 
 
-## <span class="org-todo todo TODO">TODO</span> 리포지터리 {#리포지터리}
+## 리포지터리 {#리포지터리}
 
 
 ## 응용 서비스 {#응용-서비스}
@@ -136,16 +136,11 @@ type Order interface {
 ## 표현 영역 {#표현-영역}
 
 
-## <span class="org-todo todo TODO">TODO</span> 도메인 서비스 {#도메인-서비스}
+## 도메인 서비스 {#도메인-서비스}
+
+도메인 서비스는 한 애그리게이트에 넣기 애매한 도메인 개념을 구현하려면 애그리거트에 억지로 넣기 보다는 도메인 서비스를 이용해서 도메인 개념을 명시적으로 드러내는데 사용한다.
+도메인 서비스는 상태를 가지지 않는것이 좋으며 도메인의 로직만을 구현한다. 부적절한 내용을 도메인 서비스에 구현할 경우 코드의 중복이 발행하는 문제가 발생한다.
+도메인 서비스는 도메인 로직을 실행하므로 도메인 서비스의 위치는 다른 도메일 구성 요소와 동일한 패키지에 위치한다. 분리를 원하는 경우 도메인에 화위 팩키지를 두어 구분해서 위치 시켜도 좋다.
 
 
-## <span class="org-todo todo TODO">TODO</span> 어그리게이트와 트랜젝션 관리 {#어그리게이트와-트랜젝션-관리}
-
-
-## <span class="org-todo todo TODO">TODO</span> 도메인 모델과 BOUNDED CONTEXT {#도메인-모델과-bounded-context}
-
-
-## <span class="org-todo todo TODO">TODO</span> 이벤트 {#이벤트}
-
-
-## <span class="org-todo todo TODO">TODO</span> CQRS {#cqrs}
+## 어그리게이트와 트랜젝션 관리 {#어그리게이트와-트랜젝션-관리}
