@@ -2,7 +2,7 @@
 title = "실용주의 프로그래머 Tip"
 author = ["Hillfolk"]
 date = 2021-08-23
-lastmod = 2021-08-23T23:00:08+09:00
+lastmod = 2021-08-23T23:18:49+09:00
 tags = ["실용주의", "프로그래머", "프로그래머"]
 categories = ["posts"]
 draft = true
