@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Release
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ release/* ]
+    branches: [ master ]
   pull_request:
-    branches: [ release/* ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,14 +28,17 @@ jobs:
 
       - name: Build
         run: hugo -D --minify
+      
+      - name: Rename 
+        run: mv ./public ./html
         
-      - name: copy file via ssh key
+      - name: Static Web Upload
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
-          source: "./public/*"
-          target: "/var/www/hillfolk.org/html/"
+          source: "./html"
+          target: "/var/www/hillfolk.org/"
             
