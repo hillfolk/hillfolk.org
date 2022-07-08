@@ -3,7 +3,7 @@ baseurl = "https://hillfolk.org/"
 languageCode = "ko"
 
 title = "Hillfolk"
-theme = "hyde-hyde"
+theme = "PaperMod"
 
 ## Hugo Built-in Features
 disqusShortname = "www-hillfolk-org"
