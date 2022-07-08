@@ -4,4 +4,4 @@
 
 [submodule "themes/PaperMod"]
         path = themes/PaperMod
-        url = git@github.com:hillfolk/PaperMod.git
+        url = git@github.com:hillfolk/hugo-PaperMod.git
