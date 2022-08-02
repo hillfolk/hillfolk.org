@@ -1,0 +1,55 @@
+## Basic Configuration
+baseurl = "https://hillfolk.org/"
+languageCode = "ko"
+
+title = "Hillfolk"
+theme = "PaperMod"
+
+## Hugo Built-in Features
+disqusShortname = "www-hillfolk-org"
+googleAnalytics = "UA-132815441-1"
+
+enableRobotsTXT = true
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[minify]
+    disableXML = true
+    minifyOutput = true
+
+
+## Site Settings
+[params]
+    env = production
+    author = "Hillfolk"
+    title = "Hillfolk"
+    defaultTheme = auto
+    # description = "..."
+    authorimage = "/img/hugo.png"
+    dateformat = "Jan 2, 2006"
+
+
+[[socialIcons]]
+    name = "github"
+    url = "https://github.com/hillfolk"
+
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+#[[menu.main]]
+#    name = "Portfolio"
+#    identifier = "portfolio"
+#    weight = 200
+#    url = "/portfolio/"
+#[[menu.main]]
+#    name = "About"
+#    identifier = "about"
+#    weight = 300
+#    url = "/about/"
