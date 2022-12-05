@@ -2,10 +2,10 @@
 title = "SRE vs DevOps"
 author = ["Hillfolk"]
 date = 2022-01-04
-lastmod = 2022-03-13T21:48:27+09:00
+lastmod = 2022-08-13T01:22:38+09:00
 tags = ["SRE", "DevOPS"]
 categories = ["posts"]
-draft = true
+draft = false
 weight = 100
 +++
 
