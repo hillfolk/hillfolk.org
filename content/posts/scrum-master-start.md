@@ -2,7 +2,7 @@
 title = "읽기 쉽고 빠르게 적용 가능한 애자일에 관한 책"
 author = ["Hillfolk"]
 date = 2022-12-18
-lastmod = 2022-12-17T21:29:03+09:00
+lastmod = 2022-12-17T21:37:31+09:00
 tags = ["출근했더니", "스크럼", "마스터가", "된", "건에", "관하여"]
 categories = ["posts"]
 draft = false
