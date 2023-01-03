@@ -2,10 +2,10 @@
 title = "디자인씽킹(Design Thinking)"
 author = ["Hillfolk"]
 date = 2022-12-30
-lastmod = 2022-12-31T00:57:37+09:00
+lastmod = 2023-01-03T21:53:35+09:00
 tags = ["데이터", "드리븐", "디자인씽킹", "Data", "Driven", "Design", "Thinking"]
 categories = ["posts"]
-draft = true
+draft = false
 weight = 100
 +++
 
