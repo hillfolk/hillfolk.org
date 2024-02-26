@@ -1,8 +1,8 @@
 +++
-title = "적합한 리시버 타입의 결정"
+title = "Go 에서 적합한 리시버 타입의 결정 하기"
 author = ["Hillfolk"]
 date = 2024-02-26
-lastmod = 2024-02-26T16:30:05+09:00
+lastmod = 2024-02-26T16:35:26+09:00
 tags = ["golang", "Go", "Mistakes"]
 categories = ["posts"]
 draft = false
