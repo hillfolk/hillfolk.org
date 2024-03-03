@@ -1,9 +1,9 @@
 +++
-title = "Go Options Pattern"
+title = "Go Functional Option Pattern"
 author = ["Hillfolk"]
 date = 2024-03-01
-lastmod = 2024-03-03T11:41:09+09:00
-tags = ["golang", "Go", "Mistakes", "options", "pattern"]
+lastmod = 2024-03-03T11:50:53+09:00
+tags = ["golang", "Go", "Mistakes", "option", "pattern"]
 categories = ["posts"]
 draft = false
 weight = 100
@@ -15,62 +15,61 @@ weight = 100
 
 Go에서는 구조체를 단순화 하기 위해서 사용하며 서로 다른 매개변수를 가진 많은 생성자를 정의하는 대신 다양한 함수 옵션을 허용하여 단일 생성자를 정의할 수 있다.
 
-\#+SRC\_BEGIN
+```GO
 
 type ClientOptions struct {
-	Url    string
-	Port   int
-	Method string
+  Url    string
+  Port   int
+  Method string
 }
 
-type Option func(\*ClientOptions) error
+type Option func(*ClientOptions) error
 
 func WithUrl(url string) Option {
-	return func(co \*ClientOptions) error {
-		co.Url = url
-		return nil
-	}
+  return func(co *ClientOptions) error {
+      co.Url = url
+      return nil
+  }
 }
 
 func WithPort(port int) Option {
-	return func(co \*ClientOptions) error {
-		co.Port = port
-		return nil
-	}
+  return func(co *ClientOptions) error {
+      co.Port = port
+      return nil
+  }
 }
 
 func WithMethod(method string) Option {
-	return func(co \*ClientOptions) error {
-		co.Method = method
-		return nil
-	}
+  return func(co *ClientOptions) error {
+      co.Method = method
+      return nil
+  }
 }
 
-func NewClient(opts ...Option) (\*ClientOptions, error) {
-	var co ClientOptions
-	for \_, opt := range opts {
-		err := opt(&co)
-		if err != nil {
-			return nil, err
-		}
-	}
-	return &co, nil
+func NewClient(opts ...Option) (*ClientOptions, error) {
+  var co ClientOptions
+  for _, opt := range opts {
+      err := opt(&co)
+      if err != nil {
+         return nil, err
+      }
+  }
+  return &co, nil
 }
 
 func main() {
-	client, err := NewClient(WithUrl("<http://localhost>"), WithPort(8080), WithMethod("GET"))
-	if err != nil {
-		panic(err)
-	}
+  client, err := NewClient(WithUrl("http://localhost"), WithPort(8080), WithMethod("GET"))
+  if err != nil {
+      panic(err)
+  }
 
-log.Println(client.Port)
-log.Println(client.Url)
-log.Println(client)
+  log.Println(client.Port)
+  log.Println(client.Url)
+  log.Println(client)
 
 }
 
-\#+SRC\_END
-
+```
 
 ### 결론 {#결론}
 
