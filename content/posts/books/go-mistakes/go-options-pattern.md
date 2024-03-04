@@ -1,15 +1,15 @@
 +++
-title = "Go Functional Option Pattern"
+title = "Go Functional Options Pattern"
 author = ["Hillfolk"]
 date = 2024-03-01
-lastmod = 2024-03-03T11:50:53+09:00
+lastmod = 2024-03-04T16:50:46+09:00
 tags = ["golang", "Go", "Mistakes", "option", "pattern"]
 categories = ["posts"]
 draft = false
 weight = 100
 +++
 
-## 함수형 옵션 패턴 (Functional Option Pattern) {#함수형-옵션-패턴--functional-option-pattern}
+## 함수형 옵션 패턴 (Functional Options Pattern) {#함수형-옵션-패턴--functional-options-pattern}
 
 함수형 옵션 패턴은 함수가 선택적 인수를 허용하는 함수형 프로그래밍 에서 유래했다. 함수형 옵션 패턴을 사용하여 기존 함수 구조를 손상시키지 않고 확장할 수 있는 유여한 인터페이스를 제공한다.
 
