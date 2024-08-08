@@ -1,9 +1,9 @@
 +++
 title = "프로덕트 오너"
 author = ["Hillfolk"]
-lastmod = 2024-08-08T23:48:39+09:00
+lastmod = 2024-08-08T23:56:57+09:00
 tags = ["project_owner", "프로덕트", "오너"]
-categories = ["posts"]
+categories = ["products"]
 draft = false
 weight = 100
 +++
