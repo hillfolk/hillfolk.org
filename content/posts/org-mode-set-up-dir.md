@@ -1,7 +1,7 @@
 +++
 title = "org-mode에서 디렉토리 설정하기"
 author = ["Hillfolk"]
-lastmod = 2024-08-12T18:26:06+09:00
+lastmod = 2024-08-12T18:46:35+09:00
 tags = ["org-mode", "doom", "emacs", "org-directory"]
 categories = ["posts"]
 draft = false
@@ -62,6 +62,3 @@ Org-mode는 다양한 글쓰기 기능을 제공하는데, 그중에서도 가�
 ---
 
 위와 같은 방법으로 Org-mode의 할 일 관리 기능을 확장하여, 좀 더 체계적으로 일정을 관리할 수 있게 되었습니다. 이 설정은 지속적으로 유용하게 사용할 것 같습니다.
-\`\`\`
-
-이 내용을 Org-mode 파일에 추가하시면 됩니다. 각종 링크와 코드 블록도 Org-mode에서 적절히 렌더링될 것입니다.
