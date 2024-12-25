@@ -1,9 +1,9 @@
 +++
-title = "Stibee 해킹 사례를 보면서 아쉬운점 스티비 해킹사례를 보면서 아쉬운점"
+title = "스티비 해킹사례를 보면서 아쉬운점"
 author = ["Hillfolk"]
 description = "스티비해킹 사례를 보면서 아쉬운점"
 date = 2024-12-25
-lastmod = 2024-12-25T20:14:49+09:00
+lastmod = 2024-12-25T20:26:34+09:00
 tags = ["스티비", "해킹", "개인정보", "보안"]
 categories = ["posts"]
 draft = false
