@@ -1,7 +1,11 @@
 baseURL: "https://hillfolk.org/"
 title: Hillfolk.org
-paginate: 5
 theme: PaperMod
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+  path: page
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -14,6 +18,7 @@ minify:
   minifyOutput: true
 
 params:
+  social: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Hillfolk
   description: "Hillfolk Dev Blog"
