@@ -21,11 +21,11 @@ params:
   social: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Hillfolk
-  description: "Hillfolk Dev Blog"
+  description: "Hillfolk Software Engineering Blog "
   keywords: [Blog, Portfolio]
   author: Me
   # author: ["Me", "You"] # multiple authors
-  images: ["/static/logo.png"] # multiple images
+  images: ["/mountains.png"] # multiple images
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -52,8 +52,8 @@ params:
     favicon: "/favicon.png"
     favicon16x16: "/favicon.png"
     favicon32x32: "/favicon.png"
-    apple_touch_icon: "/logo.png"
-    safari_pinned_tab: "/logo.png"
+    apple_touch_icon: "/mountains.png"
+    safari_pinned_tab: "/mountains.png"
 
   label:
     text: "HILLFOLK.ORG"
@@ -64,7 +64,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "안녕하세요.  \U0001F44B"
-    Content: 개발 🧑‍💻 서적 📚 팀워크 🤝 스타트업 🏢 에 관한 다양한 이야기를 올리고 있습니다.
+    Content: 🧑‍💻소프트웨어 엔지니어링 🏃커리어 🤝팀워크 🏢스타트업 에 관한 다양한 이야기를 올리고 있습니다.
 
 
   socialIcons:
@@ -105,19 +105,19 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-#    - identifier: categories
-#      name: Categories
-#      url: categories/
-#      weight: 10
+    - identifier: categories
+      name: Categories
+      url: categories/
+      weight: 3
     - name: Archive
       url: archives
       weight: 5
     - name: Tags
       url: tags
       weight: 10
-#    - name: Search
-#      url: search/
-#      weight: 15
+    #- name: Search
+    #  url: search/
+    #  weight: 15
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
