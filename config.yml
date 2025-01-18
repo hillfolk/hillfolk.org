@@ -52,8 +52,8 @@ params:
     favicon: "/favicon.png"
     favicon16x16: "/favicon.png"
     favicon32x32: "/favicon.png"
-    apple_touch_icon: "/mountains.png"
-    safari_pinned_tab: "/mountains.png"
+    apple_touch_icon: "/logo.png"
+    safari_pinned_tab: "/logo.png"
 
   label:
     text: "HILLFOLK.ORG"
